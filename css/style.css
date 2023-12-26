@@ -1,0 +1,456 @@
+@import url(reset.css);
+
+/* GLOBAL */
+
+.wrapper{
+  color: #161616;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  background: #D8D8D6;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* HEADER */
+.header {
+  background: #81A36B;
+  padding: 25px 0;
+}
+
+.header__container {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__logo {
+  display: inline-block;
+}
+
+.header__list {
+  display: flex;
+  gap: 30px;
+}
+
+.header__list a{
+  text-decoration: none;
+  color: #161616;
+  font-size: 18px;
+}
+
+.header__list a:hover{
+  color: #b4e09e;
+  transition: all 1s ease-out;
+}
+
+/* MAIN */
+
+.main__section{
+  background: #D8D8D6;
+}
+
+.container__amelia{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.amelia__flowers{
+  flex: 1 1 30%;
+}
+
+.amelia__flowers-img img{
+  flex: 1 1 30%;
+}
+
+.title{
+  font-family: 'Architects Daughter', cursive;
+  font-size: 62px;
+  margin-bottom: 60px;
+}
+
+.amelia__desc {
+  margin-bottom: 40px;
+}
+
+.btn_amelia > a{
+  text-decoration: none;
+  cursor: pointer;
+	line-height: 1;
+  color: #000;
+  align-items: center;
+  border: 1px solid #81A36B;
+  border-radius: 6px;
+  padding: 20px 15px;
+}
+
+.btn_amelia{
+  display: flex;
+	gap: 60px;
+}
+
+.amelia__flowers-link-one {
+  background: #81A36B;
+}
+
+.amelia__flowers-link-one:hover{
+  background: #096647;
+  transition: all 1s ease-out;
+}
+
+.amelia__flowers-link-two:hover{
+  background: #096647;
+  transition: all 1s ease-out;
+}
+
+.amelia__flowers-img{
+  max-height: 670px;
+  flex: 1 1 45%;
+  overflow: hidden;
+}
+
+.amelia__flowers-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__us {
+  text-align: center;
+  max-width: 540px;
+  padding: 120px 0;
+}
+.about__title {
+  margin-bottom: 50px;
+  color: #000;
+  font-family: Architects Daughter;
+  font-size: 32px;
+}
+.about__desc {
+  text-align: center;
+}
+
+/* SELECTION */
+
+.section__img{
+  padding: 78px 0;
+  background: #81A36B;
+}
+
+.selection__container{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.selection__container div>img{
+  margin-bottom: 25px;
+}
+
+.selection__container div>p{
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+/* WORKING */
+
+.working__section{
+  
+}
+
+.working__container{
+  display: flex;
+  gap: 30px;
+  padding: 120px 0;
+}
+.working__img {
+  flex: 1 1 45%;
+  overflow: hidden;
+  height: 560px;
+}
+
+.working__img >img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.working__inner {
+  max-width: 540px;
+  align-self: center;
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.working__title {
+  text-align: center;
+  font-family: Architects Daughter;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.working__desc {
+  text-align: center;
+}
+
+.container__our-works{
+  padding-bottom: 120px;
+}
+
+.title__our-works{
+text-align: center;
+font-family: Architects Daughter;
+font-size: 32px;
+font-weight: 400;
+margin-bottom: 26px;
+}
+
+.cards__our-works{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.card__our{
+  text-align: center;
+  background: #81A36B;
+  padding: 15px 15px 40px;
+  border-radius: 6px;
+  flex: 1 1 30%;
+}
+
+.card__our>img{
+  border-radius: 6px;
+  margin-bottom: 23px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  height: 402px;
+}
+
+.card__our>p{
+}
+
+/* FOOTER */
+
+.footer{
+  background: #81A36B;
+  padding: 50px 0;
+}
+
+.container__footer{
+  text-align: center;
+}
+
+.contact__title{
+  font-size: 24px;
+}
+
+.contact__list li{
+  margin-top: 15px;
+}
+.contact__list a{
+  text-decoration: none;
+  color: #161616;
+}
+
+.container__footer p{
+  font-weight: 500;
+}
+
+.social__list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.icon{
+  width: 24px;
+  height: 24px;
+}
+
+/* !MEDIA 1100 */
+
+@media (max-width: 1110px){
+  .container__amelia{
+		padding: 60px 15px;
+		position: relative;
+    justify-content: center;
+  }
+  .amelia__flowers{
+    max-width: 500px;
+    text-align: justify;
+    z-index: 7;
+  }
+
+  .amelia__flowers-img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		filter: blur(5px);
+  }
+
+.container__amelia > a{
+  gap: 1px;
+  text-align: center;
+}
+
+.btn_amelia{
+  gap: 20px;
+  text-align: center;
+}
+.btn_amelia > a {
+  background: #81A36B;
+  text-align: center;
+  flex: 1;
+}
+
+.working__container{
+  padding: 60px 15px;
+	position: relative;
+	justify-content: center;
+}
+
+.working__inner{
+  position: absolute;
+}
+.working__img{
+  height: 400px;
+}
+.working__img img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(20px);
+}
+
+.footer__logo{
+  margin-bottom: 20px;
+}
+}
+
+
+/* ? MEDIA 992*/
+
+@media (max-width: 992px){
+
+  .wrapper{
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .header__list{
+      gap: 15px;
+  }
+
+  .header__logo img{
+    width: auto;
+    height: 18px;
+  }
+  .working__img{
+    height: 300px;
+  }
+.title{
+	font-weight: 500;
+	font-size: 42px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.selection__container{
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.working__inner{
+  padding: 10px 20px;
+  border-radius: 6px;
+  background: rgba(81, 255, 0, 0.2);
+}
+.cards__our-works{
+  gap: 17px;
+}
+.card__our>img{
+  border-radius: 4px;
+  margin-bottom: 13px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+}
+
+/* !MEDIA 768 */
+
+@media (max-width: 768px){
+  .wrapper{
+    font-size: 14px;
+  }
+
+  .header__list{
+    gap: 10px;
+}
+.working__img{
+  height: 200px;
+}
+.cards__our-works{ 
+  flex-wrap: wrap;
+}
+.card__our{
+  border-radius: 0;
+  flex: 1 1 30%;
+  background: #D8D8D6;
+}
+
+.card__our img{
+  margin-bottom: 17px;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  height: 378px;
+}
+.container__our-works{
+  padding-bottom: 30px;
+}
+}
+
+/* !MEDIA 600 */
+
+@media (max-width: 600px){
+  .header__container{
+    justify-content: center;
+  }
+  .header__list{
+    display: none;
+}
+
+.btn_amelia{
+  flex-flow: column;
+}
+
+.about__title{
+  margin-bottom: 20px;
+}
+}
+
+
+
+
+
+
